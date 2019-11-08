@@ -4,17 +4,18 @@ section.projects
   background:
     color: seashell
 
+
   .flex.flex--center.project-header
     justify-content: center
 
-    @media (max-width: 980px)
+    //@media (max-width: 980px)
       justify-content: flex-end
 
   .col-4.flex-end
     display: flex
     justify-content: flex-end
     position: relative
-    text-align: right
+    text-align: left
     margin-left: 480px
 
     @media (max-width: 980px)
@@ -22,7 +23,7 @@ section.projects
 
   .home-lead
     color: black
-    text-align: right
+    text-align: center
     white-space: nowrap
 
   .header-arrow
@@ -85,9 +86,12 @@ section.projects
       height: auto
       display: block
 
-  .col-2.order-last
-    width: 400px
+  .col-3.order-last
+    width: 100%
     justify-content: start
+    padding-bottom: 50px
+
+    /*Added padding to the bottom of video after removing the text for the projects section, remove if ever changed back.*/
 
     @media (max-width: 680px)
       width: auto
@@ -101,6 +105,7 @@ section.projects
     position: relative
     margin: 10px
     overflow: hidden
+    transition: all 150ms ease-in-out
 
     @media (max-width: 680px)
       width: calc(100% - 8px)
@@ -122,10 +127,15 @@ section.projects
     top: 0
     right: 0
     bottom: 0
-    background: fade-out(#FF6C0C, 0.2)
+    background: fade-out(#FF6C0C, 0.1)
     padding: 30px
     opacity: 0
     transition: all 400ms ease-in-out
+
+  .meta-helper
+    width: 100%
+    height: 100%
+    position: relative
 
 
     .title
@@ -136,15 +146,29 @@ section.projects
       padding: 0 45px 10px 0
       position: relative
       opacity: 0
-      left: 400px
+      left: 50%
       transition: all 200ms ease-in-out
 
     .tools
       padding: 0 45px 10px 0
       position: relative
       opacity: 0
-      left: 400px
+      left: 50%
       transition: all 200ms ease-in-out
+
+    .project-cta
+      position: absolute
+      color: white
+      bottom: 0
+      right: 50%
+      text-decoration: underline
+      opacity: 0
+      transform: scale(1.00)
+      transition: all 200ms ease-in-out
+
+
+  .project-thumb:hover
+    transform: scale(1.02)
 
   .project-thumb:hover .project-meta
     opacity: 1
@@ -159,6 +183,10 @@ section.projects
     left: 0
     transition: all 600ms 1000ms ease-in-out
 
+  .project-thumb:hover .project-cta
+    opacity: 1
+    right: 0
+    transition: all 600ms 1600ms ease-in-out
 
   .col-4.portfolio-wrap
     left: 50%
@@ -167,8 +195,8 @@ section.projects
     position: relative
     max-width: 840px
 
-    a:nth-child(odd)
-      top: -100px
+    .project-thumb:nth-child(odd)
+      //top: -100px
 
       @media (max-width: 680px)
         top: 0

@@ -1,4 +1,6 @@
-// skills svg animation
+// -----------------------------------------------------------------------------
+// About svg animation
+// -----------------------------------------------------------------------------
 
 var params = {
   container: document.getElementById('lottie'),
@@ -11,6 +13,7 @@ var params = {
 var anim;
 
 anim = lottie.loadAnimation(params);
+
 
 // -----------------------------------------------------------------------------
 // Global functionality
@@ -25,6 +28,15 @@ anim = lottie.loadAnimation(params);
         settings = {
             scrollDuration: 300
         };
+
+    function onMobileNavUlClick (e) {
+        var $this = $(this),
+            $navigation = $('.mobile-nav'),
+            $hamburger = $('.mobile-nav-toggle');
+
+        $navigation.toggleClass('is-open');
+        $hamburger.toggleClass('is-open');
+        }
 
     function onMobileToggleClick (e) {
         var $this = $(this),
@@ -52,6 +64,7 @@ anim = lottie.loadAnimation(params);
     function bindings () {
         // Toggle mobile navigation (mobileNav)
         $('.mobile-nav-toggle').on('click', onMobileToggleClick);
+        $('.nav-li').on('click', onMobileNavUlClick);
 
         // Smooth scroll (smoothScroll)
         $('a[href^="#"]').on('click', onBlankLinkClick);
@@ -66,3 +79,21 @@ anim = lottie.loadAnimation(params);
     });
 
 })(jQuery);
+
+
+// -----------------------------------------------------------------------------
+// headroom.js
+// -----------------------------------------------------------------------------
+
+(function() {
+
+  var elem = document.querySelector("header");
+
+  var headroom  = new Headroom(elem, {
+    'offset': 220,
+    'tolerance': 5
+  });
+
+  headroom.init();
+
+}());

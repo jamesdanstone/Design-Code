@@ -1,14 +1,13 @@
 mixin nav-content()
-  ul
+  ul(class='nav-li')
     li: a(href="#about") About
     li: a(href="#projects") Projects
-    li: a(href="#skills") Skills
     li: a(href="#contact") Contact
 
 .mobile-nav
   +nav-content()
 
-header
+header(class='header')
   .header-position
     h1.logo James Stone
 
@@ -16,6 +15,6 @@ header
       +nav-content()
 
 
-    a(href="mailto:jamesdanstone@gmail.com").email-link +email me
+    a(href="#contact").email-link +Hire me
 
     .mobile-nav-toggle: span

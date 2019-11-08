@@ -30,12 +30,9 @@ webmaster_verifications:
   # google:
 
 #social links
-instagram:
-behance:
-github:
-codepen:
-medium:
-linkedin:
+
+instagram: https://www.instagram.com/jamesdanstone/
+linkedin: https://www.linkedin.com/in/james-stone-3a9907b2/
 
 #logo
 logo: logo-js.svg
