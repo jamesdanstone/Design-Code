@@ -37,7 +37,13 @@ Section.temporary
     color: #5a132b
 
     @media (max-width: 480px)
-      padding-top: 100px
+      padding-top: 180px
 
-    @media (max-width: 2000px) and (orientation:portrait)
-      padding: 200px 0
+    @media (width: 375px) and (height: 812px) and (orientation:portrait)
+      padding: 150px 0
+
+    @media (width: 411px) and (height: 823px) and (orientation:portrait)
+      padding: 130px 0
+
+    @media (min-width: 481px) and (orientation:portrait)
+      padding: 250px 0
