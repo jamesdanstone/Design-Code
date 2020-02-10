@@ -2,7 +2,7 @@
 section.projects#projects
   .flex.flex--center.project-header
 
-    .col-4.flex--center
+    //.col-4.flex--center
       //.header-arrow
       h2.large.home-lead Projects
 
@@ -15,10 +15,10 @@ section.projects#projects
         |This collection features work produced for business, events, sports teams and personal projects. I am currently an independent freelancer but open to possible representation. So please get in touch if you would like to work with me.
       //p.quote: span “All joy comes from creation, allow others to indulge in consumption.”
 
-    .col-3.order-last
+    .col-4.order-last
       .flex-video <iframe src="https://player.vimeo.com/video/367582650" frameborder="0" allowfullscreen></iframe>
 
-      //To add the text back to projects - change.col-3.order-last to col-2.order-last (and alter the sass reference too)
+      //To add the text back to projects - change.col-4.order-last to col-2.order-last (and alter the sass reference too)
 
   .flex.flex--center.portfolio
 
@@ -30,5 +30,5 @@ section.projects#projects
             .title {{post.title}}
             .description {{post.description}}
             .tools {{post.tools}}
-            a(href="{{post.url}}").project-cta See more
+            //a(href="{{post.url}}").project-cta See more
       | {% endfor %}
