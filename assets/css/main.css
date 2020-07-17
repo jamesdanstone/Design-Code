@@ -465,7 +465,7 @@ h2 {
 
 .home-wrap header {
   width: 135px;
-  background: #5a132b;
+  background: #EF4A4E;
   padding: 30px 0;
   position: relative; }
   .home-wrap header .header-position {
@@ -481,9 +481,9 @@ h2 {
     -ms-flex-pack: justify;
         justify-content: space-between; }
   .home-wrap header a {
-    color: #e1d0da; }
+    color: white; }
     .home-wrap header a:hover, .home-wrap header a:active {
-      color: #666; }
+      color: #5a132b; }
   .home-wrap header .logo {
     overflow: hidden;
     text-indent: 101%;
@@ -554,9 +554,9 @@ h2 {
   transition: all 400ms ease-in-out;
   padding-top: 45px; }
   .home-wrap .mobile-nav a {
-    color: #5a132b; }
+    color: white; }
     .home-wrap .mobile-nav a:hover, .home-wrap .mobile-nav a:active {
-      color: #666; }
+      color: #5a132b; }
   .home-wrap .mobile-nav ul {
     list-style: none;
     margin: 0;
@@ -599,7 +599,7 @@ h2 {
   .home-wrap .mobile-nav.is-open {
     transform: translateY(60%);
     z-index: 999;
-    background-color: #e1d0da; }
+    background-color: #5a132b; }
   .home-wrap .headroom {
     will-change: transform;
     transition: transform 200ms linear;
@@ -881,14 +881,14 @@ section.projects {
         flex-direction: column; }
 
 section.contact {
-  background-color: #e1d0da; }
+  background-color: #EF4A4E; }
   section.contact .col-3.flex-start {
     -ms-flex-pack: start;
         justify-content: flex-start;
     position: relative;
     text-align: center; }
   section.contact .home-lead {
-    color: #5a132b;
+    color: white;
     text-align: center;
     white-space: nowrap; }
   section.contact .header-arrow {
@@ -977,7 +977,7 @@ section.contact {
 
 section.social {
   padding: 0;
-  background-color: #e1d0da; }
+  background-color: #EF4A4E; }
   section.social .col-3 {
     position: relative;
     display: -ms-flexbox;
@@ -1007,13 +1007,13 @@ section.social {
           padding: 0; } }
   section.social .icon_stroke {
     fill-opacity: 0;
-    stroke: #5a132b;
+    stroke: white;
     stroke-miterlimit: 10;
     stroke-width: 3px; }
   section.social .icon_stroke-social {
     fill-rule: evenodd;
     clip-rule: inherit;
-    stroke: #5a132b;
+    stroke: white;
     stroke-width: 3;
     fill: #5a132b;
     fill-opacity: 0;
