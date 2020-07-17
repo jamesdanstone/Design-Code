@@ -5,7 +5,7 @@
 var params = {
   container: document.getElementById('lottie'),
   renderer: 'svg',
-  loop: false,
+  loop: true,
   autoplay: true,
   path: 'assets/js/hello_6.json'
 };
