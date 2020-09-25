@@ -22,7 +22,7 @@ exclude: ["node_modules",
 email: jamesdanstone@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   James Stone designs and animates things for humans.
-url: "https://jamesdanstone.github.io/Portfolio-Project/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://jamesstone.co.uk/" # the base hostname & protocol for your site, e.g. http://example.com
 author: James Stone
 
 # More SEO stuff
